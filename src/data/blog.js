@@ -5,7 +5,7 @@ export const posts = [
     excerpt: "A practical guide to writing content that ranks — without sacrificing readability or your readers' trust.",
     date: "May 12, 2025",
     category: "SEO Writing",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f5a07d?w=600&q=80",
+    image: "https://essinstitute.in/wp-content/uploads/2024/07/what-is-seo-1024x525.webp",
     readTime: "5 min read",
   },
   {
