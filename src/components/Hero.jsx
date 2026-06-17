@@ -97,7 +97,7 @@ export default function Hero() {
               display: "flex", alignItems: "center",
               justifyContent: "center", fontSize: "clamp(4rem,8vw,6rem)",
             }}>
-              <img src="/public/images/koech.jpeg" alt="Josphat Koech" style={{ width: "90%", height: "90%", borderRadius: "50%", objectFit: "cover" }} />
+              <img src="/images/koech.jpeg" alt="Josphat Koech" style={{ width: "90%", height: "90%", borderRadius: "50%", objectFit: "cover" }} />
             </div>
           </motion.div>
         </div>
