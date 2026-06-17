@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://josphat-koechwords.vercel.app/sitemap.xml

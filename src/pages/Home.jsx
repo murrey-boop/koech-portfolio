@@ -15,6 +15,9 @@ export default function Home() {
         <meta name="description" content="Professional content writing, SEO articles, blog posts and copywriting by Josphat Koech. Based in Nairobi, available worldwide." />
         <meta property="og:title" content="Josphat Koech — Freelance Writer & Editor" />
         <meta property="og:description" content="Content writing and editing with a creative spark." />
+        <meta property="og:image" content="https://josphat-koechwords.vercel.app/og-image.png" />
+        <meta property="og:url" content="https://josphat-koechwords.vercel.app" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <Hero />
