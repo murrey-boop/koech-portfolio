@@ -58,7 +58,7 @@ export default function Hero() {
                 display: "inline-flex", alignItems: "center", gap: 8,
                 padding: "12px 28px", borderRadius: 999,
                 background: "#c97d60", color: "#fff",
-                fontWeight: 600, textDecoration: "none", fontSize: "1rem",
+                fontWeight: 600, textDecoration: "none", fontSize: "1rem", 
                 transition: "background 0.2s",
               }}
                 onMouseEnter={e => e.currentTarget.style.background = "#a8593f"}
