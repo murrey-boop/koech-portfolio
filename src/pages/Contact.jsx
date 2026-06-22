@@ -5,8 +5,8 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact — Josphat Koech</title>
-        <meta name="description" content="Get in touch with Josphat Koech for content writing, editing, and copywriting projects." />
+        <title>Contact — Unhinged Words</title>
+        <meta name="description" content="Get in touch with Unhinged Words for SEO content writing, blog writing, website copywriting, editing, and proofreading projects." />
       </Helmet>
 
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>
@@ -18,7 +18,7 @@ export default function Contact() {
               Let's work together
             </h1>
             <p style={{ color: "var(--color-ink-soft)", lineHeight: 1.8, marginBottom: 40, fontSize: "1rem" }}>
-              Whether you need a one-off article or an ongoing content partner, I'd love to hear about your project. I'll get back to you within 24 hours.
+              Whether you need SEO content, blog posts, website copy, or a full editing pass, send the brief and I'll respond within 24 hours.
             </p>
 
             {[

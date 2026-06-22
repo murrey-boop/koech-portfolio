@@ -5,8 +5,8 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About — Josphat Koech</title>
-        <meta name="description" content="Learn about Josphat Koech — freelance content writer, editor and blogger based in Nairobi, Kenya with 5+ years of experience." />
+        <title>About — Josphat</title>
+        <meta name="description" content="Learn about Josphat  — the freelance content writing brand behind his SEO, blog, website copy, and editing work." />
       </Helmet>
 
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>
@@ -16,16 +16,16 @@ export default function About() {
           <div>
             <p style={{ color: "#c97d60", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.14em", margin: "0 0 14px" }}>About Me</p>
             <h1 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "clamp(2rem,4vw,3rem)", color: "var(--color-ink)", margin: "0 0 20px", lineHeight: 1.2 }}>
-              Who in the world am I?
+              Who in the world is Unhinged Words?
             </h1>
             <p style={{ color: "var(--color-ink-soft)", fontStyle: "italic", marginBottom: 20, lineHeight: 1.8 }}>
               "Ah, that's the great puzzle." — Lewis Carroll
             </p>
             <p style={{ color: "var(--color-ink-soft)", lineHeight: 1.8, marginBottom: 16 }}>
-              I've loved words and language for as long as I can remember — the rhythm, the precision, and the way they shape how we see the world and each other.
+              Hey, I'm Josphat — your copywriting partner for the long haul. I've spent over 15 years writing blog articles, emails, white papers, sales sheets, website content, social media posts, press releases, pitch decks, and video scripts.
             </p>
             <p style={{ color: "var(--color-ink-soft)", lineHeight: 1.8, marginBottom: 32 }}>
-              I'm a content writer who embraces the whole spectrum of what words can do — from SEO articles and blog posts to website copy, editing, and proofreading. What you get when you work with me is someone who genuinely cares about your message.
+              I earned a B.A. in Journalism from the University of Nairobi and moved into marketing, advertising, and product writing just as content strategy was taking off. The result is a writer who blends research, structure, and creative instinct into work that sounds like you and speaks to the right people.
             </p>
             <Link to="/contact" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 28px", borderRadius: 999, background: "#c97d60", color: "#fff", fontWeight: 600, textDecoration: "none" }}
               onMouseEnter={e => e.currentTarget.style.background = "#a8593f"}
@@ -51,9 +51,9 @@ export default function About() {
         <h2 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "clamp(1.6rem,3vw,2rem)", color: "var(--color-ink)", marginBottom: 28, textAlign: "center" }}>How I work</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 20 }}>
           {[
-            { icon: "🎯", title: "Clarity first", body: "I cut the clutter and say exactly what needs saying — no jargon, no filler." },
-            { icon: "🤝", title: "Collaborative", body: "I treat every project as a partnership. Your voice, your goals, my craft." },
-            { icon: "⏱️", title: "Reliable", body: "Deadlines are promises. I deliver on time, every time, without chasing." },
+            { icon: "🎯", title: "SEO and AI search aware", body: "I write for search engines and for human readers, with structure that works for modern discovery." },
+            { icon: "🤝", title: "Built around your voice", body: "I shape the piece around your message, syntax, and creative expression so it feels on brand." },
+            { icon: "⏱️", title: "Reliable delivery", body: "Projects are handled with care, clear communication, and timelines you can trust." },
           ].map(({ icon, title, body }) => (
             <div key={title} style={{ padding: "clamp(20px,3vw,32px)", borderRadius: 16, background: "var(--bg-card)", border: "1px solid var(--border-color)" }}>
               <div style={{ fontSize: "1.8rem", marginBottom: 14 }}>{icon}</div>

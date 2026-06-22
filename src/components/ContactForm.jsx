@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 const schema = z.object({
@@ -39,11 +38,9 @@ export default function ContactForm() {
   const onSubmit = async (data) => {
     setStatus("sending");
     try {
-      await emailjs.send(
-        "SERVICE_ID", "TEMPLATE_ID",
-        { user_name: data.user_name, user_email: data.user_email, subject: data.subject, message: data.message },
-        "PUBLIC_KEY"
-      );
+      const subject = encodeURIComponent(data.subject);
+      const body = encodeURIComponent(`Name: ${data.user_name}\nEmail: ${data.user_email}\n\n${data.message}`);
+      window.location.href = `mailto:josphat@koechwords.com?subject=${subject}&body=${body}`;
       setStatus("success");
       reset();
     } catch {

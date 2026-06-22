@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Josphat Koech — Freelance Writer & Editor</title>
-        <meta name="description" content="Professional content writing, SEO articles, blog posts and copywriting by Josphat Koech. Based in Nairobi, available worldwide." />
-        <meta property="og:title" content="Josphat Koech — Freelance Writer & Editor" />
-        <meta property="og:description" content="Content writing and editing with a creative spark." />
+        <title>Unhinged Words — Content Writing & Editing</title>
+        <meta name="description" content="Unhinged Words provides SEO content writing, blog writing, website copywriting, and editing for brands that want sharper messaging and stronger results." />
+        <meta property="og:title" content="Unhinged Words — Content Writing & Editing" />
+        <meta property="og:description" content="Razor-sharp words that captivate, enhance, and convert." />
         <meta property="og:image" content="https://josphat-koechwords.vercel.app/og-image.png" />
         <meta property="og:url" content="https://josphat-koechwords.vercel.app" />
         <meta property="og:type" content="website" />
@@ -30,7 +30,7 @@ export default function Home() {
               Bring in hands-on help for your words
             </h2>
             <p style={{ color: "var(--color-ink-soft)", maxWidth: 520, margin: "0 auto", fontSize: "1rem", lineHeight: 1.7 }}>
-              From day-to-day writing to bigger-picture planning, my job is to make content one less thing to worry about.
+              SEO content writing, blog writing, website copywriting, editing and proofreading, plus strategy that makes the whole system work.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(280px,1fr))", gap: 24 }}>
@@ -47,7 +47,7 @@ export default function Home() {
               Featured Work
             </h2>
             <p style={{ color: "var(--color-ink-soft)", maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>
-              A sample of projects across industries — each shaped around the client's voice and goals.
+              A sample of projects across cybersecurity, statistics, finance, cryptocurrency, automotive, and iGaming.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(280px,1fr))", gap: 24 }}>

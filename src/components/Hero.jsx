@@ -32,7 +32,7 @@ export default function Hero() {
               color: "#c97d60", fontWeight: 700, fontSize: "0.8rem",
               textTransform: "uppercase", letterSpacing: "0.14em", margin: "0 0 16px",
             }}>
-              Freelance Writer & Editor
+              Freelance Content Writer, Editor & Blogger
             </p>
 
             <h1 style={{
@@ -49,8 +49,7 @@ export default function Hero() {
               color: "var(--color-ink-soft)", fontSize: "clamp(1rem,1.5vw,1.1rem)",
               lineHeight: 1.8, maxWidth: "55ch", margin: "0 0 32px",
             }}>
-              Hi! I'm Josphat — an experienced content writer, editor, and blogger
-              helping brands communicate clearly and convert confidently.
+              Elevate your brand with razor-sharp words that captivate your audience, enhance your image, and expand your business.
             </p>
 
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>

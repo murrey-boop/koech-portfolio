@@ -43,13 +43,12 @@ export default function Navbar() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", height: 68 }}>
 
             {/* Logo */}
-            <Link to="/" style={{
-              fontFamily: "'Playfair Display',Georgia,serif",
-              fontSize: "1.3rem", fontWeight: 700,
-              color: "var(--color-ink)", textDecoration: "none",
-              flexShrink: 0,
-            }}>
-              Josphat Koech
+            <Link to="/" style={{ textDecoration: "none", flexShrink: 0 }} aria-label="Unhinged Words home">
+              <img
+                src="/images/logo.png"
+                alt="Unhinged Words"
+                style={{ display: "block", width: "clamp(160px, 18vw, 220px)", height: "auto" }}
+              />
             </Link>
 
             {/* Desktop nav */}

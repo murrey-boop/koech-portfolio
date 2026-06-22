@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BlogCard({ post }) {
   return (
     <article style={{
@@ -35,10 +37,10 @@ export default function BlogCard({ post }) {
         </p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ fontSize: "0.8rem", color: "var(--color-ink-soft)" }}>{post.date}</span>
-          <a href={`/blog/${post.slug}`} style={{
+            <Link to={`/blog/${post.slug}`} style={{
             color: "#a8593f", fontWeight: 600, fontSize: "0.9rem",
             textDecoration: "none"
-          }}>Read more →</a>
+            }}>Read more →</Link>
         </div>
       </div>
     </article>

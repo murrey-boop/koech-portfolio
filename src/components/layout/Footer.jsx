@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTelegram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 
 function NewsletterSignup() {
   const [email, setEmail] = useState("");
@@ -15,9 +14,9 @@ function NewsletterSignup() {
 
   return (
     <div>
-      <h3 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "1.3rem", color: "var(--color-ink)", margin: "0 0 8px" }}>Josphat Koech</h3>
+      <h3 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "1.3rem", color: "var(--color-ink)", margin: "0 0 8px" }}>Unhinged Words</h3>
       <p style={{ color: "var(--color-ink-soft)", lineHeight: 1.7, margin: "0 0 20px", fontSize: "0.9rem" }}>
-        Freelance content writer + editor.<br />Words that inform, inspire, and convert.
+        Freelance content writer, editor & blogger.<br />Words that inform, inspire, and convert.
       </p>
       <p style={{ fontWeight: 600, fontSize: "0.88rem", color: "var(--color-ink)", margin: "0 0 6px" }}>Get writing tips in your inbox</p>
       <p style={{ color: "var(--color-ink-soft)", fontSize: "0.82rem", margin: "0 0 12px" }}>Occasional insights on writing, content strategy, and the freelance life.</p>
@@ -56,20 +55,16 @@ export default function Footer() {
           </div>
           <div>
             <h4 style={{ fontWeight: 700, fontSize: "0.82rem", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--color-ink)", margin: "0 0 16px" }}>Connect</h4>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 16 }}>
-              {[{icon:<FaXTwitter/>,href:"#",label:"Twitter"},{icon:<FaWhatsapp/>,href:"#",label:"WhatsApp"},{icon:<FaFacebook/>,href:"#",label:"Facebook"},{icon:<FaTelegram/>,href:"#",label:"Telegram"}].map(({icon,href,label}) => (
-                <a key={label} href={href} aria-label={label} style={{ width:36,height:36,borderRadius:"50%",border:"1px solid var(--border-color)",background:"var(--bg-main)",display:"flex",alignItems:"center",justifyContent:"center",color:"var(--color-ink-soft)",fontSize:"0.95rem",textDecoration:"none",transition:"all 0.2s" }}
-                  onMouseEnter={e=>{e.currentTarget.style.background="#c97d60";e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor="#c97d60"}}
-                  onMouseLeave={e=>{e.currentTarget.style.background="var(--bg-main)";e.currentTarget.style.color="var(--color-ink-soft)";e.currentTarget.style.borderColor="var(--border-color)"}}
-                >{icon}</a>
-              ))}
+            <div style={{ display: "grid", gap: 10, marginBottom: 16 }}>
+              <a href="mailto:josphat@koechwords.com" style={{ color: "var(--color-ink-soft)", textDecoration: "none", fontSize: "0.9rem" }}>Email: josphat@koechwords.com</a>
+              <Link to="/contact" style={{ color: "var(--color-ink-soft)", textDecoration: "none", fontSize: "0.9rem" }}>Use the contact form</Link>
             </div>
             <p style={{ color: "var(--color-ink-soft)", fontSize: "0.82rem", lineHeight: 1.6 }}>Based in Nairobi, Kenya.<br />Available for remote projects worldwide.</p>
           </div>
         </div>
 
         <div style={{ paddingTop: 24, borderTop: "1px solid var(--border-color)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <p style={{ color: "var(--color-ink-soft)", fontSize: "0.82rem", margin: 0 }}>© {new Date().getFullYear()} Josphat Koech Words. All Rights Reserved.</p>
+          <p style={{ color: "var(--color-ink-soft)", fontSize: "0.82rem", margin: 0 }}>© {new Date().getFullYear()} Unhinged Words. All Rights Reserved.</p>
           <button onClick={() => window.scrollTo({top:0,behavior:"smooth"})}
             style={{ display:"flex",alignItems:"center",gap:6,padding:"7px 16px",borderRadius:999,border:"1px solid var(--border-color)",background:"transparent",color:"var(--color-ink-soft)",fontSize:"0.82rem",cursor:"pointer",fontFamily:"inherit",transition:"all 0.2s" }}
             onMouseEnter={e=>{e.currentTarget.style.background="#c97d60";e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor="#c97d60"}}
