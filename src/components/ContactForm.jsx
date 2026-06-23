@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 const schema = z.object({
@@ -26,7 +27,8 @@ const labelStyle = {
 };
 
 export default function ContactForm() {
-  const [status, setStatus] = useState(null); // "sending" | "success" | "error"
+  const [status, setStatus] = useState(null);
+  const [errorDetail, setErrorDetail] = useState("");
 
   const {
     register,
@@ -35,23 +37,43 @@ export default function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm({ resolver: zodResolver(schema) });
 
-const onSubmit = (data) => {
-  setStatus("sending");
-  try {
-    const emailBody = `Name: ${data.user_name}\nEmail: ${data.user_email}\n\nMessage:\n${data.message}`;
-    const mailtoLink = `mailto:koechjosphat27@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
-    
-    // Show success message and reset form
-    setStatus("success");
-    reset();
-    
-    // Reset status after 3 seconds
-    setTimeout(() => setStatus(null), 3000);
-  } catch {
-    setStatus("error");
-  }
-};
+  const onSubmit = async (data) => {
+    setStatus("sending");
+    setErrorDetail("");
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    // Catch missing env vars before even calling emailjs
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS env vars missing:", { serviceId, templateId, publicKey });
+      setStatus("error");
+      setErrorDetail("Configuration error — please contact me directly.");
+      return;
+    }
+
+    try {
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          user_name: data.user_name,
+          user_email: data.user_email,
+          subject: data.subject,
+          message: data.message,
+        },
+        publicKey
+      );
+      console.log("EmailJS success:", result);
+      setStatus("success");
+      reset();
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setStatus("error");
+      setErrorDetail(err?.text || err?.message || "Unknown error");
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate style={{ display: "grid", gap: 20 }}>
@@ -97,7 +119,7 @@ const onSubmit = (data) => {
       )}
       {status === "error" && (
         <div style={{ padding: "14px 20px", borderRadius: 10, background: "#fee2e2", border: "1px solid #fca5a5", color: "#991b1b", fontWeight: 500 }}>
-          ❌ Something went wrong. Please email me directly instead.
+          ❌ Something went wrong.{errorDetail && ` (${errorDetail})`} Please email koechjosphat27@gmail.com directly.
         </div>
       )}
 
