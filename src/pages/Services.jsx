@@ -16,8 +16,14 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Services — Josphat Koech</title>
-        <meta name="description" content="SEO content writing, blog writing, website copywriting, editing, proofreading, AI SEO, GEO, LLM SEO and more — by Josphat Koech." />
+        <title>Services — Unhinged Words</title>
+        <meta name="description" content="Explore SEO content writing, blog writing, website copywriting, editing, proofreading, and strategy services from Unhinged Words." />
+        <meta property="og:title" content="Services — Unhinged Words" />
+        <meta property="og:description" content="Explore SEO content writing, blog writing, website copywriting, editing, proofreading, and strategy services from Unhinged Words." />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content="https://www.unhingedwords.com/services" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.unhingedwords.com/services" />
       </Helmet>
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>

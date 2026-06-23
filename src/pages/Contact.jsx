@@ -7,6 +7,12 @@ export default function Contact() {
       <Helmet>
         <title>Contact — Unhinged Words</title>
         <meta name="description" content="Get in touch with Unhinged Words for SEO content writing, blog writing, website copywriting, editing, and proofreading projects." />
+        <meta property="og:title" content="Contact — Unhinged Words" />
+        <meta property="og:description" content="Get in touch with Unhinged Words for your next content project." />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content="https://www.unhingedwords.com/contact" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.unhingedwords.com/contact" />
       </Helmet>
 
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>

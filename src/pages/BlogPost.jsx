@@ -13,8 +13,14 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{post.title} — Josphat Koech</title>
+        <title>{post.title} — Unhinged Words</title>
         <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={`${post.title} — Unhinged Words`} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content={`https://www.unhingedwords.com/blog/${slug}`} />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href={`https://www.unhingedwords.com/blog/${slug}`} />
       </Helmet>
 
       <article style={{ maxWidth: 860, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>

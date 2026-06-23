@@ -13,8 +13,14 @@ export default function Portfolio() {
   return (
     <>
       <Helmet>
-        <title>Portfolio — Josphat Koech</title>
-        <meta name="description" content="Real writing samples by Josphat Koech across cybersecurity, finance, cryptocurrency, automotive, statistics and iGaming — click to read on Google Docs." />
+        <title>Portfolio — Unhinged Words</title>
+        <meta name="description" content="Real writing samples from Unhinged Words across cybersecurity, finance, cryptocurrency, automotive, statistics, and iGaming." />
+        <meta property="og:title" content="Portfolio — Unhinged Words" />
+        <meta property="og:description" content="Real writing samples across multiple industries, with direct links to the source documents." />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content="https://www.unhingedwords.com/portfolio" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.unhingedwords.com/portfolio" />
       </Helmet>
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>

@@ -15,9 +15,10 @@ export default function Home() {
         <meta name="description" content="Unhinged Words provides SEO content writing, blog writing, website copywriting, and editing for brands that want sharper messaging and stronger results." />
         <meta property="og:title" content="Unhinged Words — Content Writing & Editing" />
         <meta property="og:description" content="Razor-sharp words that captivate, enhance, and convert." />
-        <meta property="og:image" content="https://josphat-koechwords.vercel.app/og-image.png" />
-        <meta property="og:url" content="https://josphat-koechwords.vercel.app" />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content="https://www.unhingedwords.com/" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.unhingedwords.com/" />
       </Helmet>
 
       <Hero />

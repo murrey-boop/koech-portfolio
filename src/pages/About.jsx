@@ -5,8 +5,14 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About — Josphat </title>
-        <meta name="description" content="Josphat Koech — freelance content writer, editor and blogger with a B.A. in Journalism from UoN and 15+ years of agency writing experience across cybersecurity, finance, automotive, crypto and more." />
+        <title>About — Unhinged Words</title>
+        <meta name="description" content="Meet Unhinged Words — a freelance content writer, editor, and blogger with 15+ years of experience across cybersecurity, finance, automotive, crypto, and more." />
+        <meta property="og:title" content="About — Unhinged Words" />
+        <meta property="og:description" content="Meet the writer behind Unhinged Words and the experience shaping the brand." />
+        <meta property="og:image" content="https://www.unhingedwords.com/og-image.png" />
+        <meta property="og:url" content="https://www.unhingedwords.com/about" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://www.unhingedwords.com/about" />
       </Helmet>
 
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(48px,8vw,80px) 24px" }}>
