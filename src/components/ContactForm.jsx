@@ -35,18 +35,26 @@ export default function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm({ resolver: zodResolver(schema) });
 
-  const onSubmit = async (data) => {
-    setStatus("sending");
-    try {
-      const subject = encodeURIComponent(data.subject);
-      const body = encodeURIComponent(`Name: ${data.user_name}\nEmail: ${data.user_email}\n\n${data.message}`);
-      window.location.href = `mailto:josphat@koechwords.com?subject=${subject}&body=${body}`;
-      setStatus("success");
-      reset();
-    } catch {
-      setStatus("error");
-    }
-  };
+const onSubmit = async (data) => {
+  setStatus("sending");
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        user_name: data.user_name,
+        user_email: data.user_email,
+        subject: data.subject,
+        message: data.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
+    setStatus("success");
+    reset();
+  } catch {
+    setStatus("error");
+  }
+};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate style={{ display: "grid", gap: 20 }}>
