@@ -3,84 +3,97 @@ import { Link } from "react-router-dom";
 
 function WriterIllustration() {
   return (
-    <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"
-      style={{ width: "clamp(220px,28vw,320px)", height: "clamp(220px,28vw,320px)" }}>
+    <svg
+      viewBox="0 0 680 680"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ width: "clamp(260px,32vw,420px)", height: "clamp(260px,32vw,420px)" }}
+    >
+      <circle cx="340" cy="340" r="300" fill="#f4d9d0" opacity="0.35"/>
+      <circle cx="340" cy="340" r="240" fill="#f4d9d0" opacity="0.45"/>
 
-      {/* Outer ring */}
-      <circle cx="160" cy="160" r="148" fill="#f4d9d0" opacity="0.4"/>
-      <circle cx="160" cy="160" r="130" fill="#f4d9d0" opacity="0.6"/>
+      <rect x="160" y="210" width="360" height="260" rx="18" fill="#fffdf9" stroke="#e4c5b5" strokeWidth="2"/>
+      <rect x="160" y="210" width="360" height="44" rx="18" fill="#c97d60" opacity="0.18"/>
+      <rect x="160" y="240" width="360" height="14" fill="#c97d60" opacity="0.18"/>
 
-      {/* Main document card */}
-      <rect x="72" y="60" width="130" height="165" rx="12" fill="#fffdf9" stroke="#e4c5b5" strokeWidth="1.5"/>
+      <circle cx="192" cy="232" r="7" fill="#c97d60" opacity="0.5"/>
+      <circle cx="214" cy="232" r="7" fill="#d4a090" opacity="0.4"/>
+      <circle cx="236" cy="232" r="7" fill="#e4c5b5" opacity="0.5"/>
 
-      {/* Document header bar */}
-      <rect x="72" y="60" width="130" height="32" rx="12" fill="#c97d60" opacity="0.15"/>
-      <rect x="72" y="80" width="130" height="12" fill="#c97d60" opacity="0.15"/>
+      <rect x="190" y="278" width="130" height="8" rx="4" fill="#c97d60" opacity="0.9"/>
 
-      {/* Headline line — terracotta */}
-      <rect x="88" y="70" width="72" height="7" rx="3.5" fill="#c97d60"/>
+      <rect x="190" y="306" width="280" height="6" rx="3" fill="#d4a090" opacity="0.7"/>
+      <rect x="190" y="320" width="240" height="6" rx="3" fill="#d4a090" opacity="0.6"/>
+      <rect x="190" y="334" width="260" height="6" rx="3" fill="#d4a090" opacity="0.55"/>
+      <rect x="190" y="348" width="200" height="6" rx="3" fill="#d4a090" opacity="0.45"/>
 
-      {/* Body text lines */}
-      <rect x="88" y="106" width="98" height="5" rx="2.5" fill="#d4a090" opacity="0.8"/>
-      <rect x="88" y="118" width="82" height="5" rx="2.5" fill="#d4a090" opacity="0.7"/>
-      <rect x="88" y="130" width="90" height="5" rx="2.5" fill="#d4a090" opacity="0.65"/>
-      <rect x="88" y="142" width="66" height="5" rx="2.5" fill="#d4a090" opacity="0.55"/>
+      <line x1="190" y1="368" x2="470" y2="368" stroke="#e4c5b5" strokeWidth="1.5"/>
 
-      {/* Divider */}
-      <line x1="88" y1="158" x2="186" y2="158" stroke="#e4c5b5" strokeWidth="1"/>
+      <rect x="190" y="382" width="260" height="6" rx="3" fill="#d4a090" opacity="0.4"/>
+      <rect x="190" y="396" width="220" height="6" rx="3" fill="#d4a090" opacity="0.35"/>
+      <rect x="190" y="410" width="240" height="6" rx="3" fill="#d4a090" opacity="0.3"/>
+      <rect x="190" y="424" width="180" height="6" rx="3" fill="#d4a090" opacity="0.25"/>
 
-      {/* Second paragraph */}
-      <rect x="88" y="168" width="94" height="5" rx="2.5" fill="#d4a090" opacity="0.5"/>
-      <rect x="88" y="180" width="76" height="5" rx="2.5" fill="#d4a090" opacity="0.45"/>
-      <rect x="88" y="192" width="86" height="5" rx="2.5" fill="#d4a090" opacity="0.4"/>
-
-      {/* Pen tool — overlaid bottom-right of doc */}
-      <g transform="translate(178, 185) rotate(-40)">
-        {/* Pen barrel */}
-        <rect x="-6" y="-44" width="12" height="52" rx="5" fill="#a8593f"/>
-        {/* Pen tip */}
-        <polygon points="-6,8 6,8 0,24" fill="#7a3d2a"/>
-        {/* Pen clip / top */}
-        <rect x="-6" y="-52" width="12" height="10" rx="3" fill="#c97d60"/>
-        {/* Nib highlight */}
-        <line x1="0" y1="8" x2="0" y2="20" stroke="#f4d9d0" strokeWidth="1.5" opacity="0.6"/>
+      <g transform="translate(448 408) rotate(-38)">
+        <rect x="-8" y="-56" width="16" height="64" rx="6" fill="#a8593f"/>
+        <polygon points="-8,8 8,8 0,28" fill="#7a3d2a"/>
+        <rect x="-8" y="-66" width="16" height="12" rx="4" fill="#c97d60"/>
+        <rect x="-3" y="-56" width="6" height="64" rx="3" fill="#c97d60" opacity="0.25"/>
+        <line x1="0" y1="8" x2="0" y2="24" stroke="#f4d9d0" strokeWidth="2" opacity="0.5"/>
       </g>
 
-      {/* Floating tag — SEO */}
-      <g transform="translate(54, 96)">
-        <rect x="0" y="0" width="52" height="22" rx="11" fill="#c97d60" opacity="0.12" stroke="#c97d60" strokeWidth="1" strokeOpacity="0.4"/>
-        <text x="26" y="15" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="9" fontWeight="700" fill="#a8593f" letterSpacing="0.05em">SEO</text>
+      <g transform="translate(108 290)">
+        <rect x="0" y="0" width="68" height="26" rx="13" fill="#c97d60" opacity="0.15" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.5"/>
+        <text x="34" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">SEO</text>
       </g>
 
-      {/* Floating tag — COPY */}
-      <g transform="translate(194, 130)">
-        <rect x="0" y="0" width="56" height="22" rx="11" fill="#c97d60" opacity="0.12" stroke="#c97d60" strokeWidth="1" strokeOpacity="0.4"/>
-        <text x="28" y="15" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="9" fontWeight="700" fill="#a8593f" letterSpacing="0.05em">COPY</text>
+      <g transform="translate(502 260)">
+        <rect x="0" y="0" width="76" height="26" rx="13" fill="#c97d60" opacity="0.15" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.5"/>
+        <text x="38" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">COPY</text>
       </g>
 
-      {/* Floating tag — BLOG */}
-      <g transform="translate(190, 80)">
-        <rect x="0" y="0" width="52" height="22" rx="11" fill="#c97d60" opacity="0.12" stroke="#c97d60" strokeWidth="1" strokeOpacity="0.4"/>
-        <text x="26" y="15" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="9" fontWeight="700" fill="#a8593f" letterSpacing="0.05em">BLOG</text>
+      <g transform="translate(510 360)">
+        <rect x="0" y="0" width="76" height="26" rx="13" fill="#c97d60" opacity="0.15" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.5"/>
+        <text x="38" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">BLOG</text>
       </g>
 
-      {/* Sparkle top-right */}
-      <g transform="translate(248, 68)">
-        <line x1="0" y1="-11" x2="0" y2="11" stroke="#c97d60" strokeWidth="2.5" strokeLinecap="round"/>
-        <line x1="-11" y1="0" x2="11" y2="0" stroke="#c97d60" strokeWidth="2.5" strokeLinecap="round"/>
-        <line x1="-7" y1="-7" x2="7" y2="7" stroke="#c97d60" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
-        <line x1="7" y1="-7" x2="-7" y2="7" stroke="#c97d60" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      <g transform="translate(96 390)">
+        <rect x="0" y="0" width="84" height="26" rx="13" fill="#c97d60" opacity="0.15" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.5"/>
+        <text x="42" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">EDIT</text>
       </g>
 
-      {/* Small sparkle bottom-left */}
-      <g transform="translate(68, 222)">
+      <g transform="translate(116 480)">
+        <rect x="0" y="0" width="96" height="26" rx="13" fill="#c97d60" opacity="0.12" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.4"/>
+        <text x="48" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">STRATEGY</text>
+      </g>
+
+      <g transform="translate(490 460)">
+        <rect x="0" y="0" width="80" height="26" rx="13" fill="#c97d60" opacity="0.12" stroke="#c97d60" strokeWidth="1.2" strokeOpacity="0.4"/>
+        <text x="40" y="17" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="700" fill="#a8593f" letterSpacing="1">AEO</text>
+      </g>
+
+      <g transform="translate(530 168)">
+        <line x1="0" y1="-13" x2="0" y2="13" stroke="#c97d60" strokeWidth="3" strokeLinecap="round"/>
+        <line x1="-13" y1="0" x2="13" y2="0" stroke="#c97d60" strokeWidth="3" strokeLinecap="round"/>
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#c97d60" strokeWidth="1.8" strokeLinecap="round" opacity="0.5"/>
+        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#c97d60" strokeWidth="1.8" strokeLinecap="round" opacity="0.5"/>
+      </g>
+
+      <g transform="translate(150 178)">
+        <line x1="0" y1="-9" x2="0" y2="9" stroke="#c97d60" strokeWidth="2.5" strokeLinecap="round"/>
+        <line x1="-9" y1="0" x2="9" y2="0" stroke="#c97d60" strokeWidth="2.5" strokeLinecap="round"/>
+      </g>
+
+      <g transform="translate(148 530)">
         <line x1="0" y1="-7" x2="0" y2="7" stroke="#c97d60" strokeWidth="2" strokeLinecap="round"/>
         <line x1="-7" y1="0" x2="7" y2="0" stroke="#c97d60" strokeWidth="2" strokeLinecap="round"/>
       </g>
 
-      {/* Dot accent — bottom right */}
-      <circle cx="248" cy="220" r="5" fill="#c97d60" opacity="0.35"/>
-      <circle cx="262" cy="220" r="3" fill="#c97d60" opacity="0.2"/>
+      <circle cx="534" cy="524" r="7" fill="#c97d60" opacity="0.3"/>
+      <circle cx="552" cy="524" r="4.5" fill="#c97d60" opacity="0.18"/>
+      <circle cx="563" cy="524" r="2.5" fill="#c97d60" opacity="0.12"/>
+      <circle cx="118" cy="222" r="5" fill="#c97d60" opacity="0.25"/>
+      <circle cx="530" cy="576" r="4" fill="#c97d60" opacity="0.2"/>
+      <circle cx="160" cy="600" r="3" fill="#c97d60" opacity="0.15"/>
     </svg>
   );
 }
