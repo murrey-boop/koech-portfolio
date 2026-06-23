@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import {useTheme } from "../context/ThemeContext";
 
 
 
 export default function Hero() {
+
+  const { theme } = useTheme();
   return (
     <section style={{ padding: "clamp(48px,8vw,96px) 24px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -92,10 +95,14 @@ export default function Hero() {
           style={{
               width: "clamp(260px,38vw,520px)",
               height: "auto",
-              mixBlendMode: "multiply",
-              opacity: 0.92,
+              mixBlendMode: theme === "dark" ? "normal" : "multiply",
+              opacity: theme === "dark" ? 1 : 0.92,
+              borderRadius: theme === "dark" ? 20 : 0,
+              background: theme === "dark" ? "#2a1a16" : "transparent",
+              padding: theme === "dark" ? "24px" : "0",
+              transition: "all 0.3s",
           }}
-  />
+            />
           </motion.div>
         </div>
       </div>
