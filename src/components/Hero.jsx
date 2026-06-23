@@ -100,18 +100,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Available badge */}
-            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20 }}>
-              <span style={{
-                display: "inline-flex", alignItems: "center", gap: 6,
-                padding: "5px 14px", borderRadius: 999,
-                background: "#d1fae520", border: "1px solid #6ee7b760",
-                color: "#059669", fontSize: "0.8rem", fontWeight: 700,
-              }}>
-                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#10b981", display: "inline-block" }} />
-                Available for projects
-              </span>
-            </div>
+         
 
             <p style={{ color: "#c97d60", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.14em", margin: "0 0 14px" }}>
               Freelance Content Writer, Editor & Blogger
@@ -130,15 +119,9 @@ export default function Hero() {
               color: "var(--color-ink-soft)", fontSize: "clamp(1rem,1.5vw,1.1rem)",
               lineHeight: 1.8, maxWidth: "55ch", margin: "0 0 10px",
             }}>
-              Elevate your brand with razor-sharp words that captivate your audience, enhance your image, and expand your business — now and for good.
+              Elevate your brand with razor-sharp words that captivate your audience, enhance your image, and expand your business,<span style={{ color: "#a8593f" }}>now and for good.</span>
             </p>
-            <p style={{
-              color: "var(--color-ink-soft)", fontSize: "0.95rem",
-              lineHeight: 1.7, maxWidth: "52ch", margin: "0 0 32px",
-            }}>
-              Hi, I'm Josphat — a content strategist, copywriter, and editor with a B.A. in Journalism and{" "}
-              <strong style={{ color: "var(--color-ink)" }}>15+ years</strong> of agency writing experience.
-            </p>
+          
 
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link to="/contact" style={{

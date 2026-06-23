@@ -8,7 +8,7 @@ export default function ServiceCard({ title, description, to = "/services" }) {
     >
       <h3 style={{fontFamily:"'Playfair Display',Georgia,serif", fontSize:"1.35rem", marginBottom:12, color:"var(--color-ink)"}}>{title}</h3>
       <p style={{color:"var(--color-ink-soft)", marginBottom:20, lineHeight:1.7}}>{description}</p>
-      <Link to={to} style={{color:"var(--accent-color)", fontWeight:600, textDecoration:"none"}}>Learn more →</Link>
+
     </div>
   );
 }

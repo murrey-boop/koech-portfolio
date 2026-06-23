@@ -24,10 +24,10 @@ export default function Services() {
         <div style={{ textAlign: "center", marginBottom: "clamp(40px,6vw,64px)" }}>
           <p style={{ color: "#c97d60", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 12 }}>What I Do</p>
           <h1 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "clamp(2rem,4vw,3rem)", color: "var(--color-ink)", margin: "0 0 16px" }}>
-            Bring in hands-on help for your words
+            Enlist hands-on help for  your words
           </h1>
           <p style={{ color: "var(--color-ink-soft)", fontSize: "1.05rem", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
-            Got a nifty start-up website and some lovable headshots… but no words? Here are some ways we can help.
+            Got a nifty start-up website and some lovable headshots… but no words? Here are some ways I can help.
           </p>
         </div>
 

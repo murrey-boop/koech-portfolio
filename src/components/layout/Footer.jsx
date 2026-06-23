@@ -68,7 +68,7 @@ export default function Footer() {
               ))}
             </div>
             <p style={{ color: "var(--color-ink-soft)", fontSize: "0.9rem", lineHeight: 1.7, margin: "0 0 14px" }}>
-              Prefer email? Reach out at <a href="mailto:josphat@koechwords.com" style={{ color: "#c97d60", textDecoration: "none", fontWeight: 600 }}>josphat@koechwords.com</a> for project inquiries.
+              Prefer email? Reach out at <a href="mailto:koechjosphat27@gmail.com" style={{ color: "#c97d60", textDecoration: "none", fontWeight: 600 }}>koechjosphat27@gmail.com</a> for project inquiries.
             </p>
           </div>
         </div>

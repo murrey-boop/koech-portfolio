@@ -18,9 +18,7 @@ export default function About() {
             <h1 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "clamp(2rem,4vw,3rem)", color: "var(--color-ink)", margin: "0 0 16px", lineHeight: 1.2 }}>
               Hey, I'm Josphat — your copywriting partner for the long haul.
             </h1>
-            <p style={{ color: "var(--color-ink-soft)", fontStyle: "italic", marginBottom: 20, lineHeight: 1.8, fontSize: "1rem" }}>
-              "Ah, that's the great puzzle." — Lewis Carroll
-            </p>
+          
             <p style={{ color: "var(--color-ink-soft)", lineHeight: 1.8, marginBottom: 16 }}>
               I've loved words and language for as long as I can remember — the art of them, the theatre, the rhythm and intent and precision. The way they shape how we see the world and each other.
             </p>
@@ -42,9 +40,9 @@ export default function About() {
             <div style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)", borderRadius: 16, padding: "28px 28px 20px" }}>
               <p style={{ fontWeight: 700, fontSize: "0.78rem", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--color-ink)", margin: "0 0 16px" }}>Work Experience</p>
               {[
-                { company: "Verblio, Inc.", role: "Copywriter", period: "2021 — Present" },
-                { company: "VPNAlert", role: "Copywriter", period: "2017 — 2021" },
-                { company: "iWriter", role: "Junior Copywriter", period: "2011 — 2017" },
+                { company: "VPNAlert", role: "Blog Writer", period: "2021 — Present" },
+                { company: "Verblio, Inc.", role: "Copywriter", period: "2017 — 2021" },
+                { company: "iWriter", role: "Junior Content Writer", period: "2011 — 2017" },
               ].map(({ company, role, period }) => (
                 <div key={company} style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", paddingBottom: 12, marginBottom: 12, borderBottom: "1px solid var(--border-color)" }}>
                   <div>

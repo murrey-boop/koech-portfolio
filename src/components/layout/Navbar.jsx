@@ -95,8 +95,9 @@ export default function Navbar() {
       fontFamily="Inter, system-ui, sans-serif"
       fontSize="25"
       fontWeight="800"
-      fill="var(--color-ink)"
+      fill="#a8593f"
       letterSpacing="1"
+      
     >
       words
     </text>

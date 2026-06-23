@@ -5,7 +5,7 @@
   <rect x="280" y="260" width="30" height="30" fill="#F8B51D"/>
   <text x="125" y="220" fill="#F7F7F7" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" letter-spacing="-10">un</text>
   <text x="325" y="395" fill="#F7F7F7" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" letter-spacing="-10">hinged</text>
-  <text x="325" y="565" fill="#F7F7F7" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" letter-spacing="-10">words</text>
+  <text x="325" y="565" fill="#c97d60" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" letter-spacing="-10">words</text>
   <rect x="965" y="240" width="8" height="340" fill="#F7F7F7"/>
   <text x="1035" y="345" fill="#D0D0D0" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="500" letter-spacing="2">CONTENT</text>
   <text x="1035" y="435" fill="#D0D0D0" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="500" letter-spacing="2">WRITING</text>
