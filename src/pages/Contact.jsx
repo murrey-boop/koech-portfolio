@@ -28,8 +28,7 @@ export default function Contact() {
             </p>
 
             {[
-              { icon: "📧", label: "Email", value: "josphat@koechwords.com" },
-              { icon: "📍", label: "Location", value: "Nairobi, Kenya" },
+              { icon: "📧", label: "Email", value: "koechjosphat27@gmail.com" },
               { icon: "⏰", label: "Response time", value: "Within 24 hours" },
               { icon: "🌍", label: "Availability", value: "Remote projects worldwide" },
             ].map(({ icon, label, value }) => (
