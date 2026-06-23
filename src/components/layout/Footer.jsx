@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaTelegram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 
 function NewsletterSignup() {
   const [email, setEmail] = useState("");
@@ -55,11 +56,20 @@ export default function Footer() {
           </div>
           <div>
             <h4 style={{ fontWeight: 700, fontSize: "0.82rem", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--color-ink)", margin: "0 0 16px" }}>Connect</h4>
-            <div style={{ display: "grid", gap: 10, marginBottom: 16 }}>
-              <a href="mailto:josphat@koechwords.com" style={{ color: "var(--color-ink-soft)", textDecoration: "none", fontSize: "0.9rem" }}>Email: josphat@koechwords.com</a>
-              <Link to="/contact" style={{ color: "var(--color-ink-soft)", textDecoration: "none", fontSize: "0.9rem" }}>Use the contact form</Link>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 16 }}>
+              {[{icon:<FaWhatsapp/>,href:"https://wa.link/kkcmsi",label:"WhatsApp"},
+              {icon:<FaFacebook/>,href:"https://www.facebook.com/profile.php?id=100079088674472",label:"Facebook"},
+              {icon:<FaXTwitter/>,href:"https://x.com/adcopyace",label:"Twitter"},
+              {icon:<FaTelegram/>,href:"https://t.me/josphat27",label:"Telegram"}].map(({icon,href,label}) => (
+                <a key={label} href={href} aria-label={label} style={{ width:36,height:36,borderRadius:"50%",border:"1px solid var(--border-color)",background:"var(--bg-main)",display:"flex",alignItems:"center",justifyContent:"center",color:"var(--color-ink-soft)",fontSize:"0.95rem",textDecoration:"none",transition:"all 0.2s" }}
+                  onMouseEnter={e=>{e.currentTarget.style.background="#c97d60";e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor="#c97d60"}}
+                  onMouseLeave={e=>{e.currentTarget.style.background="var(--bg-main)";e.currentTarget.style.color="var(--color-ink-soft)";e.currentTarget.style.borderColor="var(--border-color)"}}
+                >{icon}</a>
+              ))}
             </div>
-            <p style={{ color: "var(--color-ink-soft)", fontSize: "0.82rem", lineHeight: 1.6 }}>Based in Nairobi, Kenya.<br />Available for remote projects worldwide.</p>
+            <p style={{ color: "var(--color-ink-soft)", fontSize: "0.9rem", lineHeight: 1.7, margin: "0 0 14px" }}>
+              Prefer email? Reach out at <a href="mailto:josphat@koechwords.com" style={{ color: "#c97d60", textDecoration: "none", fontWeight: 600 }}>josphat@koechwords.com</a> for project inquiries.
+            </p>
           </div>
         </div>
 

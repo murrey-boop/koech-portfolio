@@ -42,14 +42,113 @@ export default function Navbar() {
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", height: 68 }}>
 
-            {/* Logo */}
-            <Link to="/" style={{ textDecoration: "none", flexShrink: 0 }} aria-label="Unhinged Words home">
-              <img
-                src="/images/logo.png"
-                alt="Unhinged Words"
-                style={{ display: "block", width: "clamp(160px, 18vw, 220px)", height: "auto" }}
-              />
-            </Link>
+          {/* Logo */}
+<Link
+  to="/"
+  style={{
+    textDecoration: "none",
+    flexShrink: 0,
+    display: "flex",
+    alignItems: "center",
+  }}
+>
+  <svg
+    width="420"
+    height="80"
+    viewBox="0 0 420 90"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="Unhinged Words"
+  >
+    {/* UN */}
+    <text
+      x="10"
+      y="38"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="34"
+      fontWeight="800"
+      fill="var(--color-ink)"
+    >
+      un
+    </text>
+
+    {/* Hinge Dots */}
+    <rect x="14" y="50" width="8" height="8" rx="1" fill="#F4B400" />
+    <rect x="32" y="50" width="8" height="8" rx="1" fill="#F4B400" />
+    <rect x="50" y="50" width="8" height="8" rx="1" fill="#F4B400" />
+
+    {/* HINGED */}
+    <text
+      x="72"
+      y="54"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="50"
+      fontWeight="800"
+      fill="var(--color-ink)"
+    >
+      hinged
+    </text>
+
+    {/* WORDS */}
+    <text
+      x="87"
+      y="80"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="25"
+      fontWeight="800"
+      fill="var(--color-ink)"
+      letterSpacing="1"
+    >
+      words
+    </text>
+
+    {/* Divider */}
+    <line
+      x1="290"
+      y1="12"
+      x2="290"
+      y2="82"
+      stroke="var(--border-color, var(--color-ink))"
+      strokeWidth="2"
+    />
+
+    {/* Tagline */}
+    <text
+      x="310"
+      y="32"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="14"
+      fontWeight="800"
+      fill="var(--color-ink)"
+      letterSpacing="1"
+    >
+      CONTENT
+    </text>
+
+    <text
+      x="310"
+      y="52"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="14"
+      fontWeight="800"
+      fill="var(--color-ink)"
+      letterSpacing="1"
+    >
+      WRITING
+    </text>
+
+    <text
+      x="310"
+      y="72"
+      fontFamily="Inter, system-ui, sans-serif"
+      fontSize="14"
+      fontWeight="800"
+      fill="var(--color-ink)"
+      letterSpacing="1"
+    >
+      &amp; EDITING
+    </text>
+  </svg>
+</Link>
 
             {/* Desktop nav */}
             <nav style={{ display: "flex", alignItems: "center", gap: 28 }}
